@@ -1,9 +1,10 @@
 public class CommitBuilder {
-    private CommitScope commitScope = null;
+    private String commitScope = null;
     private CommitTag commitTag = null;
     private String commitString = "";
+    private Boolean breakingChange = false;
 
-    CommitBuilder addScope(CommitScope commitScope) {
+    CommitBuilder addScope(String commitScope) {
         this.commitScope = commitScope;
         return this;
     }
@@ -20,7 +21,7 @@ public class CommitBuilder {
 
     Commit build() {
         try {
-            return new Commit(this.commitTag, this.commitScope, this.commitString);
+            return new Commit(this.commitTag, this.commitScope, this.commitString, this.breakingChange);
         } catch (Exception e) {
             throw e;
         }

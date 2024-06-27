@@ -3,7 +3,8 @@ public class Main {
         CommitTag fix = new CommitTag("fix", "denotes a fix for an issue.");
 
         try {
-            Commit commit = new CommitBuilder().addTag(fix).addMessage("balling").build();
+            Commit commit = new CommitBuilder().addTag(fix).addMessage("balling").addScope("intake").build();
+            System.out.println(commit.getMessage());
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
