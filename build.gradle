@@ -12,5 +12,5 @@ repositories {
 }
 
 dependencies {
-  implementation 'com.moandjiezana.toml:toml4j:0.7.2'
+  implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.1'
 }

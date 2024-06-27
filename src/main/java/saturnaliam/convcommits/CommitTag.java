@@ -8,4 +8,6 @@ public class CommitTag {
         this.tagName = tagName;
         this.tagDescription = tagDescription;
     }
+
+    public CommitTag() {}
 }
