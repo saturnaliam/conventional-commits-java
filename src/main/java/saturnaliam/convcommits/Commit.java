@@ -1,3 +1,5 @@
+package main.java.saturnaliam.convcommits;
+
 public class Commit {
     private CommitTag commitTag;
     private String commitScope;

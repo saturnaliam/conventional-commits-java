@@ -1,3 +1,5 @@
+package main.java.saturnaliam.convcommits;
+
 public class Main {
     public static void main(String[] args) {
         CommitTag fix = new CommitTag("fix", "denotes a fix for an issue.");

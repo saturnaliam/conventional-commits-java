@@ -1,3 +1,5 @@
+package main.java.saturnaliam.convcommits;
+
 public class CommitTag {
     public String tagName,
                   tagDescription;

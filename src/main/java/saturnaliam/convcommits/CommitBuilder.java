@@ -1,3 +1,5 @@
+package main.java.saturnaliam.convcommits;
+
 public class CommitBuilder {
     private String commitScope = null;
     private CommitTag commitTag = null;
